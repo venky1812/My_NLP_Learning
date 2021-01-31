@@ -29,3 +29,14 @@ All NLP software typically works at the sentence level and expects a separation 
 * **Frequent steps**:Stop word removal, stemming and lemmatization, removing digits/punctuation, lowercasing, etc.
 * **Other steps:** Normalization, language detection(`Polyglot`), code mixing, transliteration, etc.
 * **Advanced processing:** POS tagging, parsing, coreference resolution, etc.
+
+#### Feature Engineering:
+
+* Feature engineering is an integral step in any ML pipeline. Feature engineering steps convert the raw data into a format that can be consumed by a machine.
+* The main drawback of classical ML models is the feature engineering. Handcrafted feature engineering becomes a bottleneck for both model performance and the model development cycle.In the DL pipeline, the raw data (after pre-processing) is directly fed to a model. The model is capable of “learning” features from the data.
+
+#### Modelling:
+
+* Start with Simple Heuristics.(Stanford NLP’s TokensRegex and spaCy’s rule-based matching are two useful tools for advanced regular expressions).
+* Building Your Model
+
