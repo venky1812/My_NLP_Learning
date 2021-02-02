@@ -40,3 +40,20 @@ All NLP software typically works at the sentence level and expects a separation 
 * Start with Simple Heuristics.(Stanford NLP’s TokensRegex and spaCy’s rule-based matching are two useful tools for advanced regular expressions).
 * Building Your Model
 
+
+## Text Representation 
+
+
+#### Doc2Vec:
+* Doc2vec is similar to Word2vec in terms of its general architecture, except that, in addition to the word vectors, it also learns a “paragraph vector” that learns a representation for the full text.By doing so it captures the contextual information which was not captured by word embedddinggs or character embeddings.
+* Since it models some form of context and can encode texts of arbitrary length into a fixed, low-dimensional, dense vector, it has found application in a wide range of NLP applications, such as text classification, document tagging, text recommendation systems, and simple chatbots for FAQs.
+
+#### Contextual word representations:
+* It uses “language modeling,” which is the task of predicting the next likely word in a sequence of words.
+* It make use of the word embeddings we discussed earlier but use complex architectures involving multiple passes through the text and multiple reads from left to right and 
+ right to left to model the context of language use.
+ 
+ #### Points to remember:
+ * All text representations are inherently biased based on what they saw in training data.Need to be aware of those biases and its impact on our task.
+ * Unlike the basic vectorization approaches, pre-trained embeddings are generally large-sized files (several gigabytes), which may pose problems in certain deployment scenarios.
+ 
