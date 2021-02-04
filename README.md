@@ -57,3 +57,17 @@ All NLP software typically works at the sentence level and expects a separation 
  * All text representations are inherently biased based on what they saw in training data.Need to be aware of those biases and its impact on our task.
  * Unlike the basic vectorization approaches, pre-trained embeddings are generally large-sized files (several gigabytes), which may pose problems in certain deployment scenarios.
  
+ 
+## Text Classification/Topic Classificaton/Text Categorization/Document Categorization :
+#### Types of classification:
+ * Binary Classification,multiclass and multi label classification.
+ 
+#### Typical Text classification Pipeline:
+* Collect or create a labeled dataset suitable for the task.
+* Split the dataset into two (training and test) or three parts: training, validation (i.e., development), and test sets, then decide on evaluation metric(s).
+* Transform raw text into feature vectors.
+* Train a classifier using the feature vectors and the corresponding labels from the training set.
+* Using the evaluation metric(s) from Step 2, benchmark the model performance on the test set.
+* Deploy the model to serve the real-world use case and monitor its performance.
+ 
+ 
